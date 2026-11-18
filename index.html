@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Xem dịch vụ massage, địa chỉ và thông tin đặt lịch của spa tại TP. Hồ Chí Minh.">
+  <title>Spa massage tại TP. Hồ Chí Minh</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="styles.css">
+  <script src="business.js" defer></script>
+  <script src="page.js" defer></script>
+</head>
+<body id="dau-trang">
+  <a class="skip-link" href="#noi-dung">Đến nội dung chính</a>
+
+  <header class="site-header shell">
+    <a class="identity" href="#dau-trang">
+      <span class="identity-mark" aria-hidden="true"><i></i><i></i></span>
+      <span class="identity-text">
+        <strong class="title-2" data-spa-name>Spa massage</strong>
+        <span class="caption-5 muted" data-name-pending>Tên spa · Đang cập nhật</span>
+      </span>
+    </a>
+    <nav class="site-nav title-4" aria-label="Điều hướng chính">
+      <a href="#dich-vu">Dịch vụ</a>
+      <a href="#dia-chi">Địa chỉ</a>
+    </nav>
+    <div class="header-booking" data-booking>
+      <button class="button button-sm" type="button" aria-controls="zalo-dau-trang" aria-expanded="false">
+        Đặt lịch qua Zalo
+      </button>
+      <p class="booking-status caption-2" id="zalo-dau-trang" role="status"></p>
+    </div>
+  </header>
+
+  <main id="noi-dung" tabindex="-1">
+    <section class="hero shell" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="location-line caption-1"><span aria-hidden="true"></span>TP. Hồ Chí Minh</p>
+        <h1 class="heading-1" id="hero-heading">Thư giãn sau<br>một ngày dài</h1>
+        <p class="hero-intro body-3">Một spa massage nhỏ ở TP. Hồ Chí Minh, dành cho những lúc bạn muốn nghỉ ngơi và thả lỏng.</p>
+        <div data-booking>
+          <button class="button button-md" type="button" aria-controls="zalo-gioi-thieu" aria-expanded="false">
+            Đặt lịch qua Zalo <span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="booking-status caption-2" id="zalo-gioi-thieu" role="status"></p>
+        </div>
+      </div>
+      <div class="hero-media" id="anh-gioi-thieu"></div>
+    </section>
+
+    <section class="services section-band" id="dich-vu" aria-labelledby="services-heading">
+      <div class="shell section-grid">
+        <h2 class="heading-2" id="services-heading">Dịch vụ <br>&amp; bảng giá</h2>
+        <div class="service-menu">
+          <p class="sample-tag caption-3" id="ghi-chu-dich-vu" hidden>Nội dung mẫu</p>
+          <table id="bang-gia" aria-labelledby="services-heading">
+            <thead class="caption-1">
+              <tr>
+                <th scope="col">Dịch vụ</th>
+                <th scope="col">Thời lượng</th>
+                <th scope="col">Giá</th>
+              </tr>
+            </thead>
+            <tbody id="danh-sach-dich-vu"></tbody>
+          </table>
+          <p class="body-3 muted" id="chua-co-dich-vu" hidden>Đang cập nhật</p>
+          <div class="menu-booking" data-booking>
+            <button class="button button-md" type="button" aria-controls="zalo-dich-vu" aria-expanded="false">
+              Đặt lịch qua Zalo
+            </button>
+            <p class="booking-status caption-2" id="zalo-dich-vu" role="status"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="space shell" id="khong-gian" aria-labelledby="space-heading">
+      <div class="space-intro">
+        <h2 class="heading-2" id="space-heading">Không gian spa</h2>
+        <p class="body-3 muted" id="ghi-chu-hinh-anh" hidden>Hình ảnh minh họa cho ý tưởng thiết kế.</p>
+      </div>
+      <div class="gallery" id="thu-vien-anh"></div>
+    </section>
+
+    <section class="visit section-band" id="dia-chi" aria-labelledby="visit-heading">
+      <div class="shell section-grid">
+        <h2 class="heading-2" id="visit-heading">Địa chỉ <br>&amp; giờ mở cửa</h2>
+        <div class="visit-details">
+          <dl class="facts">
+            <div>
+              <dt class="title-3">Địa chỉ</dt>
+              <dd class="body-3 muted" id="gia-tri-dia-chi">Đang cập nhật</dd>
+            </div>
+            <div>
+              <dt class="title-3">Giờ mở cửa</dt>
+              <dd class="body-3 muted" id="gia-tri-gio-mo-cua">Đang cập nhật</dd>
+            </div>
+            <div>
+              <dt class="title-3">Số điện thoại</dt>
+              <dd class="body-3 muted" id="gia-tri-dien-thoai">Đang cập nhật</dd>
+            </div>
+          </dl>
+          <a class="directions title-3" id="chi-duong" hidden>Xem chỉ đường <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-strip shell" aria-labelledby="booking-heading">
+      <div class="booking-panel">
+        <h2 class="heading-3" id="booking-heading">Đặt lịch massage</h2>
+        <div data-booking>
+          <button class="button button-md button-light" type="button" aria-controls="zalo-cuoi-trang" aria-expanded="false">
+            Đặt lịch qua Zalo <span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="booking-status caption-2" id="zalo-cuoi-trang" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <p class="caption-2" data-spa-name>Spa massage</p>
+    <p class="caption-2 muted">Bản xem trước · V1</p>
+  </footer>
+</body>
+</html>
